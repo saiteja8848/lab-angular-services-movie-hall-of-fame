@@ -1,0 +1,10 @@
+<h1>Movies List</h1>
+
+<ul *ngFor="let movie of moviesList">
+    <li>MovieId:{{movie.movieId}}</li>
+    <li>MovieName:{{movie.movieTitle}}</li>
+    <li>MoviePosterUrl:{{movie.oviePosterUrl}}</li>
+    <li>synopsis:{{movie.synopsis}}</li>
+    <li *ngFor="let genere of movie.genres">
+        generes:{{genere}}</li>
+</ul>
